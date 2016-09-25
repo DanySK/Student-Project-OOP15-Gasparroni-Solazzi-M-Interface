@@ -75,7 +75,7 @@ public class Control_Impl implements Control{
 		case "Copy":
 			copy.setCurrentDirectory(new java.io.File("."));
 			copy.setDialogTitle("Selezionare Progetto");
-			copy.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+			copy.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		    // disable the "All files" option.
 			copy.setAcceptAllFileFilterUsed(false);
 		    if (copy.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
