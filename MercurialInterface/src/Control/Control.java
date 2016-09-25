@@ -77,13 +77,4 @@ public interface Control {
 	* @return true se la directory selezionata è corretta
 	*/
 	boolean dir_Diff(String s);
-	
-	/**
-	* Metodo per la creazione della View del inserire l'URL
-	* per effettuare il push
-	*
-	* @param url
-	*          Stringa dell'URL per il push
-	*/
-	void pushed(String url);
 }

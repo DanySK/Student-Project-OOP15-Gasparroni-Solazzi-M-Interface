@@ -55,9 +55,4 @@ public interface Model {
 	 * @param userName
 	 */
 	void doUser(String user);
-	/**
-	 * 
-	 * @param url
-	 */
-	void push(String url);
 }

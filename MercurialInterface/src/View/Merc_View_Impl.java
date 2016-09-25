@@ -75,7 +75,6 @@ public class Merc_View_Impl extends JFrame implements Merc_View{
 		bList.add(new JButton("Commit"));
 		bList.add(new JButton("Log"));
 		bList.add(new JButton("Clone"));
-		bList.add(new JButton("Push"));
 		bList.add(new JButton("Repository"));
 		
 		for(JButton element: bList){
@@ -101,10 +100,6 @@ public class Merc_View_Impl extends JFrame implements Merc_View{
 				
 			case "Commit":
 				element.setToolTipText("Digitare un commento per eseguire il commit");
-				break;
-				
-			case "Push":
-				element.setToolTipText("Digitare l'URL da cui andare ad inserire la repository locale");
 				break;
 				
 			case "Log":

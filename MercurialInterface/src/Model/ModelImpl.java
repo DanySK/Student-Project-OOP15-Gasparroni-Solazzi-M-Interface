@@ -117,9 +117,4 @@ public class ModelImpl implements Model {
 		CommandModelProject.print("hg config --edit","");
 	}
 	
-	@Override
-	public void push(String url) {
-		CommandModelProject.print("hg push " + url , this.repo);
-	}
-	
 }

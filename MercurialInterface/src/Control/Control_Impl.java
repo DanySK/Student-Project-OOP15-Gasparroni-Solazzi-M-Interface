@@ -22,7 +22,6 @@ public class Control_Impl implements Control{
 	private static Welcome wel;
 	private static Existence ex;
 	private static Log_View log;
-	private static Push_View push;
 	private static Model m;
 	private JFileChooser repo = new JFileChooser();
 	private JFileChooser adder = new JFileChooser();
@@ -53,11 +52,6 @@ public class Control_Impl implements Control{
 			log = new Log_View(m.doLog());
 			log.setVisible(true);
 			break;
-		
-		case "Push":
-			push = new Push_View(this);
-			push.setVisible(true);
-			break;	
 			
 		case "Clone":
 			clone = new Clone_View(this);
@@ -118,12 +112,6 @@ public class Control_Impl implements Control{
 	public void set_Repository(String url){
 		m.clone_Repository(url);
 		merc.set_Clone(url);
-	}
-	
-	@Override
-	public void pushed(String url){
-		m.push(url);
-		JOptionPane.showMessageDialog(null, "Push effettuato", "Push", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	@Override
